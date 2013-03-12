@@ -1,0 +1,468 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta name="description" content="Once upon a time there was a man named Charles W. Cushman. A hobbyist, he was a very early adopter of color film, and archives like his are rare. That is, archives this vast and this good. Beyond his photos lies a story of road trips, attempted murder, and the lifelong search for depth of field.">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="shortcut icon" href="http://www.npr.org/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="http://media.npr.org/news/specials/2012/cushman/img/touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://media.npr.org/news/specials/2012/cushman/img/touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://media.npr.org/news/specials/2012/cushman/img/touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://media.npr.org/news/specials/2012/cushman/img/touch-icon-144x144-precomposed.png" />
+  
+	<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link  rel="stylesheet" href="css/jplayer-black-and-yellow.css">
+		<link rel="stylesheet" href="css/stylecurrent.css">
+	
+	<!-- Begin JavaScript -->
+		<script src="js/libs/modernizr-2.0.6.min.js"></script>	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+		
+		<script src="js/libs/popcorn-complete.min.js"></script>
+		
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+	
+<!--popcorn stuff -->
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+ 
+    <script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+ 
+           // Create a popcorn instance by calling the Youtube player plugin
+         var example = Popcorn.youtube(
+           '#video',
+           'http://www.youtube.com/watch?v=C_MlyrEbAHs&feature=player_embedded' );
+ 
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         example.footnote({
+           start: 2,
+           end: 6,
+           text: "Pop!",
+           target: "footnotediv"
+         });
+ 
+         // play the video right away
+         example.play();
+ 
+      }, false);
+    </script>
+     	
+	 	<script type="text/javascript">
+	 	
+		//<![CDATA[
+		$(document).ready(function(){
+		
+			$("#pop-audio").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "FalconHood.mp3",
+						oga: "FalconHood.ogg"
+					}).jPlayer("pause");
+				},
+				play: function() { // To avoid both jPlayers playing together.
+					$(this).jPlayer("pauseOthers");
+				},
+				ended: function (event) {
+					$(this).jPlayer("pause");
+				},
+				swfPath: "js",
+				supplied: "oga, mp3",
+				//errorAlerts:true
+			});
+			
+			$('#lm').click(function() {
+				$.smoothScroll({
+					speed: 800,
+					scrollTarget: '#learn'
+				});
+				return false;
+			});
+			
+			//jplayer events
+			
+			$('#title-button').click(function() {
+				$.smoothScroll({
+					speed: 800,
+					scrollTarget: '#introduction'
+				});
+				return false;
+			});
+			
+			$('#second_player').click(function() {
+				$.smoothScroll({
+					speed: 800,
+					scrollTarget: '#chapter1',
+					afterScroll: function() {$("#pop-audio").jPlayer("play", 0);}
+				});
+				return false;
+			});
+			
+			//chapter 1
+			$('#discovery').click(function() {
+				$.smoothScroll({
+					scrollTarget: '#chapter1',
+					afterScroll: function() {$("#pop-audio").jPlayer("play", 0);}
+				});
+				return false;
+			});
+			//chapter 2
+			$("#witness").click( function() {
+  				$("#pop-audio").jPlayer("play", 65);
+			});
+			//chapter 3
+			$("#obsessive").click( function() {
+  				$("#pop-audio").jPlayer("play", 117);
+			});
+			//chapter 4
+			$("#mythic").click( function() {
+  				$("#pop-audio").jPlayer("play", 243);
+			});
+			
+			$("#learn-more").click( function() {
+  				$("#pop-audio").jPlayer("pause");
+			});
+			//learn more
+			$('#learn-more').click(function() {
+				$.smoothScroll({
+					speed: 900,
+					scrollTarget: '#learn',
+					afterScroll: function() {$("#pop-audio").jPlayer("pause");}
+				});
+				return false;
+			});
+			
+
+		});
+		//]]>
+		</script>
+	<!-- End JavaScript -->
+	
+	<script src="js/text.js"></script>
+
+<title>inthenameofhonor</title> 
+</head>
+	
+<!-- ========================================= TITLE =================================== -->
+<div  id="titlecard">
+	<section id="first" class="story" data-speed="7" data-type="background">
+            <div class="title" data-type="sprite" data-offsetY="120" data-Xposition="40%" data-speed="-2"></div>
+            <article>
+                <!-- Change width and height so that it matches with the original png-->
+                <img src="img/india.png" alt="title" width= 80% />
+            </article>
+        </section>
+
+	
+<div id="introduction">
+	<div id="intro-inner">
+	
+		<div id="intro-text">
+		<h2>Women's Body</h2>
+	
+		<h4>For most of human history, woman's body has been treated as man's property, in reality as well as representation.
+		Women bear the brunt when revenge is to be sought, accounts have to be settled or punishment is to be awarded.
+		Whether its adultery and rape, they both are seen as an insult to a man's honor.
+		</h4>
+		
+		<div>
+		<h6><a id="second_player" href="#">The History</a></h6></div>
+		</div><!--/intro-text-->
+	</div><!--/intro-inner-->
+</div>
+
+<div id="navbar">
+	<!--<p id="home"><a href="#global-header">Home</a></p>-->
+
+	<div id="audio">
+	
+		<div id="pop-audio" class="jp-jplayer"></div>
+		
+		<div class="jp-audio-container">
+			<div class="jp-audio">
+				<div class="jp-type-single">
+				
+					<div id="jp_interface_1" class="jp-interface">
+						<ul class="jp-controls">
+							<li><a href="#" class="jp-play" tabindex="1">play</a></li>
+							<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+							
+							<li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
+							<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+							
+						</ul>
+						<div class="jp-progress-container">
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="jp-volume-bar-container">
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!--/audio -->
+	
+	<ul id="chapter-nav">
+		<li><div id="disco"><a id="discovery" href="#c1">Explore</a></div></li>
+		<li><div id="wit"><a id="witness" href="#c2">About</a></div></li>
+		<li><div id="ob"><a id="obsessive" href="#c3">Participate/Comment</a></div></li>
+		<!--<li><div id="myth"><a id="mythic" href="#c4">depth</a></div></li> -->
+	</ul>
+
+</div> <!--/navbar -->
+
+<!-- !chapter1 -->
+<div id="chapter1" class="panel">
+
+	
+	<div class="panel-inner">
+	
+	<div id="c1-intro">
+	<h2>India in Treta Yuga</h2>
+	<div id="c1-intro">
+	<p>Second of the four eons (yuga) 
+           of Hindu chronology</p>
+	
+	</div>
+	<div class="panel-video">
+		<a href="http://devdutt.com/articles/indian-mythology/a-womans-body.html"><img src="img/ramayanasita.png" alt="indian-mythology article by devdutta" class="scale-with-grid"
+		width="60%" height="60%">	
+        </div>
+	</div> 
+	
+	<div id="photo1">
+		<h2>India btwn 8th & 9th Centuries BC</h2>
+		<div class="panel-videophoto1">
+		<a href="http://en.wikipedia.org/wiki/Karna"><img src="img/draupadi.png" alt="wiki article on Draupadi" class="scale-with-grid"
+		width="60%" height="60%">	
+                </div>
+		
+	</div> <!-- /.card -->
+	
+	
+	<div id="photo2">
+		<h2>1947 India Pakistan Partition</h2>
+	</div> <!-- /.card -->
+	
+	<div id="photo3" class="card-videophoto1">
+		<a href="http://www.guardian.co.uk/commentisfree/2007/aug/17/thesexualpoliticsofpartition">
+			<img src="img/Thesexualpoliticsofpartition.png" alt="news article" class="scale-with-grid"width="100%" height="100%">
+		
+	</div> <!-- /.card -->
+	
+	<div id="photo3" class="card-videophoto1">
+		<a href="http://www.guardian.co.uk/commentisfree/2007/aug/17/thesexualpoliticsofpartition">
+			<img src="img/partriarchalSociety.png" alt="news article" class="scale-with-grid" width="100%" height="100%">
+		
+	</div> <!-- /.card -->
+	
+	<div id="photo3" class="card-videophoto1">
+		<a href="http://www.amazon.com/Great-Partition-Making-India-Pakistan/dp/0300143338">
+			<img src="img/partitionRapeBook.png" alt="news article" class="scale-with-grid" width="100%" height="100%">
+	</div> <!-- /.card -->
+	
+	<div id="photo5b">
+		<h2>It is estimated that during the partition between 75,000 and 100,000 women were kidnapped and raped. </h2>
+	</div>
+	
+	<!-- video ask*-->
+	
+       <!--  <div id="video" style="width: 360px; height: 300px;" ></div>
+         <div id="footnotediv"></div> -->
+		
+		
+		<div id="video" class="card-videophoto1">
+			<div id="footnotediv"></div>
+		</div> <!-- /.card -->
+
+		
+		<div id="c5-intro" class="card">
+			<h2>Share this story</h2>
+
+	<div id="quotes">
+
+			<blockquote>
+				<p>&quot;Photography is not a contest&#8230; It's about being a witness to your times.&quot;</p>
+				<h5>&#8212;Rich Remsberg</h5>
+			</blockquote>
+			
+			<blockquote>
+				<p>&quot;He was a hobbyist&#8230; but he was also an obsessive. You put those two things together and you've got a certain kind of picture-taker.&quot;</p>
+				<h5>&#8212;Eric Sandweiss</h5>
+			</blockquote>
+			
+	</div><!--/quotes -->
+	
+	<a id="lm" href="#learn">
+			<h3>India after Partition  &darr;</h3>
+	</a><!-- /lm -->
+
+		</div> <!-- /.card -->
+			
+	</div><!-- /panel-inner -->
+
+</div><!-- /chapter1 -->
+
+
+
+<!-- !learn -->
+<div id="learn">
+
+	<div class="container">
+	
+		<div id="about" class="four columns">
+			
+		</div><!--/four--> 
+	
+	
+			
+    <div id="sometitle">
+                <p>InTheNameOfHonor#India</p>
+            </div>
+        </header>
+            
+        <h2 id ="howtoparticipate"> 
+            <nav><a href="http://www.explore.com/">Explore</a>  <a href="http://www.about.com">About</a>  <a href="http://www.How to participate?.com">How to participate?</a></nav>
+        </h2>
+            
+        <div>
+           
+            <div class="video-box" height="440">
+                <div id="video"></div>
+            </div>
+            
+            <div class="video-box"><a href="http://www.nytimes.com/2013/01/08/opinion/after-being-raped-i-was-wounded-my-honor-wasnt.html">
+                <img src="img/wounded.jpg" alt="I was wonded.jpg" width="100%" height="100%">
+            </div>
+        
+            <div class="video-box"><a href="http://www.nytimes.com/2012/12/31/world/asia/rape-incites-women-to-fight-culture-in-india.html?pagewanted=all">
+                <img src="img/Punjab_sucide.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+                
+            <div class="video-box"><a href="http://www.hindustantimes.com/Entertainment/Tabloid/Sunny-Leone-tweets-controversial-rape-comment/Article1-1005811.aspx">
+                <img src="img/sunny Leone comment.jpg" alt="I was wonded.jpg" width="100%" height="100%">
+            </div>
+        
+            <div class="video-box"><a href="http://www.guardian.co.uk/world/2013/feb/21/india-violence-rape-murder-girls">
+                <img src="img/three girls raped and murdered.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+            
+            <div class="video-box"><a href="http://india.blogs.nytimes.com/2012/03/05/meet-the-superheros-of-delhi/">
+                <img src="img/MeettheSuperheroesofDelhi.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+                
+                
+            <div class="video-box"><a href="https://twitter.com/WomanStats/status/298532752528130048">
+                <img src="img/police.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+            
+            <div class="video-box"><a href="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn">
+                <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+           
+            <div class="video-box"><a href="https://twitter.com/WomanStats/status/298532752528130048">
+                <img src="img/police.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+            
+            <div class="video-box"><a href="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn">
+                <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+        
+            <div class="video-box"><a href="http://www.nytimes.com/2012/12/29/opinion/rape-in-india.html?_r=0">
+                <img src="img/World largest democracy.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+            
+            <div class="video-box"><a href="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn">
+                <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
+            </div>
+            
+            
+            <nav class="pvnx"><a href="previouspg.html"><img src="interface/left_arrow.png" alt="Previous" height="40" width="40"></a>
+            <a href="nextpg.html"><img src="interface/right_arrow.png" alt="Next height="40" width="40"></a></nav>
+        
+        </div>
+        
+        
+        <div>
+            <p id="comments">Comments</p>
+            <p id="sharestories" >Share your stories & 
+            I promise to put it on the time-line</p>
+        </div>
+		
+
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'inthenameof'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+    <div id="leftbox">
+        <p><a class="twitter-timeline" <a class="twitter-timeline" href="https://twitter.com/search?q=%23Rape+%23India+" data-widget-id="306935877840551936">Tweets about "#Rape #India "</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</script>
+
+    </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+		<div id="about-project">
+		<h3>About the project</h3>
+			<p>This is a demo of the code behind the NPR project <a href="http://www.npr.org/news/specials/2012/cushman/">"Lost and Found"</a>. Demo Music: Falcon Hood by <a href="http://podingtonbear.com/">Chad Crouch</a> (Podington Bear). Placeholder images courtesy of <a href="http://placekitten.com/">placekitten</a>.</p>
+		</div>
+
+		</div><!--/twelve-->
+	</div><!-- /container -->
+	
+</div><!-- /learn -->
+
+<!--[if lt IE 8 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+ 
+            a{
+                color: black;
+            }
+            
+            #header {
+            margin-top: 50px;
+            }
+            
+            #sometitle {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 130px;
+                margin: 0% .1% .5% .1%;
+                
+                padding: 0% .2% .1% .1%;
+                color: #000000;
+                display: inline-block;
+                text-decoration: none;
+            }
+        
+            .video-box {
+                background-color: #000000;
+                padding: .5% .5% .4% .5%;
+                width: 31.3333333%;
+                height: 50%;
+                float: left;
+                margin: .5% .5% .5% .5%;
+                /*margin-right: .5%;*/
+            }
+            .space-box {
+                background-color: #000000;
+                padding: .5% .5% .5% .5%;
+                width: 100%;
+                height: 50%;
+                float: left;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            
+            
+            .pvnx {
+                margin-left: .5%;
+                margin-right: .5%;
+                padding: 10px 0 0 0;
+                /*text-align: right;*/
+                display: inline-block;
+                 
+                text-decoration: none;
+            }
+            #howtoparticipate {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 30px;
+                padding: .1% .5% .5% .1%;
+                text-decoration: none;
+                margin-left: .5%;
+                margin-right: .5%;
+                color: #000000;
+                text-decoration: none;
+ 
+            }
+                
+        
+            #h5 {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 20px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            
+            #comments {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 60px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            
+            #sharestories {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 40px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            
+             #leftbox{
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 25px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+        
+            video {
+                width: 100%;
+            }
+            
+            #share{
+                 font-family: "Georgia";
+                font-weight: 200;
+                font-size: 20px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            #form{
+                margin: 20px 14px 0 14px;
+                padding: 0 0 20px 0;
+                position: relative;
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 25px;
+                display: block;
+                letter-spacing: .01em;
+                }
+
+
+form {
+    margin: 20px 14px 0 14px;
+    }
+    
+fieldset {
+    border: .5%;
+    margin: .5%;
+    padding: .5%;
+    }
+    
+label {
+    cursor: pointer;
+    }
+    
+legend {
+    border: 0;
+    margin-left: -7px;
+    padding: 0;
+    white-space: normal;
+    }
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    vertical-align: middle;
+    }
+    
+button, input {
+    line-height: normal;
+    }
+    
+    #commentstory {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 20px;
+                margin-left: .5%;
+                margin-right: .5%;
+                text-align:left;
+            }
+    .label {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 10px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+       
