@@ -223,15 +223,15 @@ h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
 #title h2 {
 	font-size: 31px;
 	margin: 0 0 0 8px;
-color: #a6dbd5;
-font-family: "Helvetica Neue";
-                font-weight: 100;
-                font-size: 10px;
-line-height: 1;
-font-weight: normal;
-text-shadow: 1px 2px 3px #000;
-text-transform: uppercase;
-}
+        color: #a6dbd5;
+        font-family: "Helvetica Neue";
+        font-weight: 100;
+        font-size: 10px;
+        line-height: 1;
+        font-weight: normal;
+        text-shadow: 1px 2px 3px #000;
+        text-transform: uppercase;
+        }
 
 #title h2 b {
 color: #61dbcd;
@@ -474,6 +474,21 @@ color: #ddd;
 	
 }
 
+.card-videophoto2{
+	position: relative;
+	color: #ccc;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	width: 1280px;
+	
+	float: left;
+	padding-left: 30px;
+	margin-right: 120px;
+	padding-top: 80px;
+
+	
+}
+
 
 /* panel text */
 
@@ -517,7 +532,7 @@ color: #ddd;
 /**** c1-intro ****/
 
 #c1-intro {
-	width: 1440px;
+	width: 1500px;
 	height: 1000px;
 	float: left;
 	background: url(../img/ramayana.jpg) 100% 20px no-repeat fixed; 
@@ -583,6 +598,10 @@ color: #ddd;
 	padding: 0px 0px;
 	position: relative;
 }
+#c1-intro.color {
+	background: url(../img/mahabharat.jpg) 100% 20px no-repeat fixed;
+
+}
 
 #photo1 h2 {
 	font-size: 50px;
@@ -641,15 +660,8 @@ color: #ddd;
 #photo8 {margin-right: 900px; }
 
 #c2-intro {
-	width: 1500px;
-	height: 700px;
-	background: #111 url(http://placekitten.com/800/600);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	border-right: 5px solid #000;
-	border-left: 5px solid #000;
-	
+	width: 1000px;
+	height: 700px;		
 }
 
 #c2-intro h2 {
@@ -658,12 +670,19 @@ color: #ddd;
 
 /*** c3-intro ***/
 
-#photo20 {margin-right: 900px;}
+#photo20 {
+	width: 1500px;
+	height: 700px;
+	margin-right: 900px;
+	background-size:cover;
+	border-right: 5px solid #000;
+	border-left: 5px solid #000;
+}
 
 #c3-intro {
 	width: 1500px;
 	height: 700px;
-	background: #111 url(http://placekitten.com/800/600);
+	background: #111 transparent url(partitiongif.gif);
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -684,7 +703,7 @@ color: #ddd;
 #c4-intro {
 	width: 1500px;
 	height: 700px;
-	background: #111 url(http://placekitten.com/800/600);
+	background: #111 transparent url(partitiongif.gif);
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -715,16 +734,22 @@ color: #ddd;
 	width: 400px;
 	float: left;
 	margin: 0 70px 0 0;
-	font-size: 22px;
+	font-size: 18px;
+	font-style: italic;
 	text-shadow: 1px 2px 3px #000;
-	color: #888;
+	color: #ffffff;
 }
 
-#quotes blockquote h5 {font-style: italic; font-size: 24px; margin: 0;}
+#quotes blockquote h5 {
+	font-style: italic;
+	font-size: 18px;
+	margin: 0;
+	}
 
 #c5-intro h3 {
 	font-size: 50px;
-	font-family: 'Hammersmith One', helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue";
+        font-weight: 100;
 	text-transform: uppercase;
 	margin: 0;
 	line-height: .9;
@@ -752,18 +777,25 @@ color: #fff;
 #learn {
 	background: #fff;
 	position: relative;
-	 margin-top: -20px;
-	 padding-top: 100px;
 	 border-top: 5px solid #000;
 	
 }
 
+#learn2 {
+	background: #fff;
+	position: relative;
+	
+	
+}
+
 #learn h2 {
+	font-family: "Helvetica Neue";
+        font-weight: 100;
 	font-size: 45px;
 	margin: 0;
 	line-height: .9;
 	color: #000;
-	font-family: 'Hammersmith One', helvetica, arial, sans-serif;
+
 	text-transform: uppercase;
 }
 
@@ -772,13 +804,14 @@ color: #fff;
 	margin: 0;
 	line-height: .9;
 	color: #333;
-	font-family: 'Hammersmith One', helvetica, arial, sans-serif;
+
 	text-transform: uppercase;
 }
 
 #about p {
 	font-size: 12px;
-	font-family: helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue";
+                font-weight: 100;
 }
 
 
@@ -786,7 +819,8 @@ color: #fff;
 
 #cushman-book a p {
 	font-size: 11px;
-	font-family: helvetica, arial, sans-serif;
+	ffont-family: "Helvetica Neue";
+                font-weight: 100;
 	color: #666;
 }
 
@@ -817,7 +851,8 @@ padding-bottom: 8px;
 	position: absolute;
 	bottom: 30px;
 	left: 0px;
-	font-family: helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue";
+                font-weight: 100;
 	color: #555;
 	font-size: 12px;
 	
@@ -837,7 +872,8 @@ border-top:1px solid #fff;
 display: block;
 float: left;
 color: #fff;
-font-family: helvetica;
+font-family: "Helvetica Neue";
+
 background: #ccc url('http://media.npr.org/chrome/slideshow_controls.png');
 margin-bottom: 1px;
 border-right: 1px solid #fff;
@@ -877,13 +913,34 @@ display: block;
 	font-size: 18px;
 	line-height: .9;
 	color: #333;
-	font-family: 'Hammersmith One', helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue";
+        font-weight: 100;
 	text-transform: uppercase;
 }
 
 #about-project {border-top: 1px solid #eee; padding-top: 20px;}
 
-#about-project p {font-size: 12px; font-family: helvetica, arial, sans-serif; color: #777;}
+#about-project p {
+font-size: 18px;
+font-family: serif;
+color: #333;
+margin-top: .5%;
+}
+
+#about-project h3 {
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+font-size: 40px;
+color: 
+#333;
+font-family:"Helvetica Neue";
+text-transform: uppercase;
+}
 
 #footer {margin-top: 30px; padding-bottom: 50px;}
 
@@ -892,6 +949,13 @@ display: block;
 #footer a p {color: #555;}
 
 #footer a:hover p {color: #000;}
+
+.container {
+position: relative;
+width: 960px;
+margin: 0 auto;
+padding: 0;
+}
 
 /* =============================================================================
    Non-semantic helper classes
@@ -941,6 +1005,8 @@ display: block;
 				display: none; 
 				visibility: hidden;
 		}
+		/*vertical line*/
+		
 		
 		/* chapter nav */
 		#chapter-nav {left: 10px;}
@@ -1192,7 +1258,7 @@ display: block;
 		.photo-info a {font-style: normal;}
 		
 		/*remsberg*/
-		#photo1 {background: transparent url(http://placekitten.com/800/600);}
+		#photo1 {background: transparent url();}
 		#photo1 img {display: none;}
 		#photo1 h2 {font-size: 30px; width: 250px;}
 		
